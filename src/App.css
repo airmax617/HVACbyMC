@@ -1,0 +1,14 @@
+/* App-level overrides — replaces Vite default styles */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+/* Bottom padding on mobile to avoid sticky CTA overlap */
+@media (max-width: 1024px) {
+  main {
+    padding-bottom: 64px;
+  }
+}
