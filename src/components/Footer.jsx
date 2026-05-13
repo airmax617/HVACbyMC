@@ -80,7 +80,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} MC Heating and Cooling. All rights reserved.</p>
-          <p>Serving the Greater Philadelphia Area</p>
+          <p>Serving Philadelphia, Bucks & Montgomery Counties</p>
         </div>
       </div>
     </footer>

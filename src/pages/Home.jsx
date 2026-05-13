@@ -31,11 +31,11 @@ const reviews = [
   { name: 'Sarah K.',    location: 'Bristol, PA',   stars: 5, text: 'Called them for an AC emergency on the hottest day of the summer. They came out within hours. Incredible service.' },
 ]
 
-const serviceArea = [
-  'Bensalem','Bristol','Levittown','Langhorne','Feasterville',
-  'Trevose','Southampton','Warminster','Doylestown','Newtown',
-  'Yardley','Morrisville','Penndel','Croydon','Philadelphia',
-]
+const serviceArea = {
+  'Philadelphia County': ['Philadelphia', 'Northeast Philadelphia', 'South Philadelphia'],
+  'Bucks County': ['Bensalem', 'Bristol', 'Levittown', 'Langhorne', 'Feasterville', 'Trevose', 'Southampton', 'Newtown', 'Yardley', 'Morrisville', 'Penndel', 'Croydon'],
+  'Montgomery County': ['Warminster', 'Horsham', 'Hatboro', 'Willow Grove', 'Abington', 'Cheltenham', 'Jenkintown', 'Ambler'],
+}
 
 const portfolioPhotos = Array.from({ length: 12 }, (_, i) => `/photos/photo-${i + 1}.jpg`)
 
@@ -207,13 +207,20 @@ export default function Home() {
       <section className="py-16 px-4 bg-navy-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <MapPin size={32} className="text-amber-400 mx-auto mb-4" />
-          <h2 className="text-3xl font-bold mb-3">Serving the Greater Philadelphia Area</h2>
-          <p className="text-gray-400 mb-8">We provide service to homes and businesses throughout Bucks County, Philadelphia, and surrounding communities.</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {serviceArea.map(town => (
-              <span key={town} className="bg-white/10 text-gray-200 text-sm px-3 py-1.5 rounded-full">{town}</span>
+          <h2 className="text-3xl font-bold mb-3">Serving Philadelphia, Bucks & Montgomery Counties</h2>
+          <p className="text-gray-400 mb-10">We provide heating, cooling, electrical, and maintenance services to homes and businesses across the tri-county area.</p>
+          <div className="grid sm:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+            {Object.entries(serviceArea).map(([county, towns]) => (
+              <div key={county} className="bg-white/10 rounded-xl p-5">
+                <h3 className="text-amber-400 font-semibold text-sm uppercase tracking-wider mb-3">{county}</h3>
+                <div className="flex flex-wrap gap-1.5">
+                  {towns.map(town => (
+                    <span key={town} className="bg-white/10 text-gray-200 text-xs px-2.5 py-1 rounded-full">{town}</span>
+                  ))}
+                  <span className="text-gray-500 text-xs px-2.5 py-1">& more</span>
+                </div>
+              </div>
             ))}
-            <span className="bg-white/10 text-gray-400 text-sm px-3 py-1.5 rounded-full">& more</span>
           </div>
         </div>
       </section>

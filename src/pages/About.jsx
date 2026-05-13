@@ -6,7 +6,7 @@ const highlights = [
   { icon: Users,       title: 'Locally Owned & Operated', body: 'We live and work in this area. Our reputation depends on every job we do.' },
   { icon: Award,       title: 'Daikin Authorized Dealer',  body: 'Certified to sell, install, and service the full Daikin product lineup.' },
   { icon: CheckCircle, title: 'Licensed & Insured',        body: 'Fully licensed HVAC and electrical contractor. License #: [Placeholder]' },
-  { icon: MapPin,      title: 'Serving Greater Philadelphia', body: 'Bucks County, Philadelphia, and surrounding communities.' },
+  { icon: MapPin,      title: 'Tri-County Service Area', body: 'Philadelphia, Bucks, and Montgomery Counties.' },
 ]
 
 const stats = [
@@ -35,7 +35,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold text-navy-900 mb-5">Local Expertise You Can Count On</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              MC Heating and Cooling is a locally owned HVAC and electrical contractor serving homeowners and light commercial customers throughout Bucks County and the greater Philadelphia area.
+              MC Heating and Cooling is a locally owned HVAC and electrical contractor serving homeowners and light commercial customers throughout Philadelphia, Bucks, and Montgomery Counties.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               We built this company on a simple philosophy: show up on time, do the job right, and never recommend something a customer does not actually need. Whether you are dealing with a no-heat emergency or planning a whole-home HVAC upgrade, we treat every job with the same level of care.

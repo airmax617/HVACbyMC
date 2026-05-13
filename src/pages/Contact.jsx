@@ -51,7 +51,7 @@ export default function Contact() {
                   <MapPin size={18} className="text-amber-500 shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-medium text-navy-900">Service Area</p>
-                    <p className="text-sm text-gray-600">Greater Philadelphia Area<br />Bucks County & surrounding communities</p>
+                    <p className="text-sm text-gray-600">Philadelphia, Bucks & Montgomery Counties</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
