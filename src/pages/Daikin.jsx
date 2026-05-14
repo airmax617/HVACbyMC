@@ -48,7 +48,7 @@ const specials = [
   },
 ]
 
-const portfolioPhotos = Array.from({ length: 8 }, (_, i) => `/photos/photo-${i + 5}.jpg`)
+const portfolioPhotos = Array.from({ length: 9 }, (_, i) => `/photos/daikin/photo-${String(i + 1).padStart(2, '0')}.jpg`)
 
 export default function Daikin() {
   return (

@@ -37,7 +37,7 @@ const serviceArea = {
   'Montgomery County': ['Warminster', 'Horsham', 'Hatboro', 'Willow Grove', 'Abington', 'Cheltenham', 'Jenkintown', 'Ambler'],
 }
 
-const portfolioPhotos = Array.from({ length: 12 }, (_, i) => `/photos/photo-${i + 1}.jpg`)
+const portfolioPhotos = Array.from({ length: 12 }, (_, i) => `/photos/photo-${String(i + 1).padStart(2, '0')}.jpg`)
 
 export default function Home() {
   return (
@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <section className="relative bg-gradient-to-br from-navy-950 via-navy-900 to-navy-700 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(/photos/photo-3.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(/photos/photo-03.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-32">
           <div className="max-w-3xl">
             <p className="inline-block bg-amber-500 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5">
