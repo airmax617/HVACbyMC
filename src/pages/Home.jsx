@@ -37,7 +37,7 @@ const serviceArea = {
   'Montgomery County': ['Warminster', 'Horsham', 'Hatboro', 'Willow Grove', 'Abington', 'Cheltenham', 'Jenkintown', 'Ambler'],
 }
 
-const portfolioPhotos = Array.from({ length: 12 }, (_, i) => `/photos/photo-${String(i + 1).padStart(2, '0')}.jpg`)
+const portfolioPhotos = Array.from({ length: 191 }, (_, i) => `/photos/photo-${String(i + 1).padStart(2, '0')}.jpg`)
 
 export default function Home() {
   return (
