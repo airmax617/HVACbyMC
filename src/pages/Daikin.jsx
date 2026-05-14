@@ -143,7 +143,7 @@ export default function Daikin() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="section-heading text-center mb-8">Recent Daikin Installations</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {portfolioPhotos.map((src, i) => (
               <div key={i} className="aspect-square rounded-xl overflow-hidden bg-gray-200">
                 <img src={src} alt={`Daikin installation ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
