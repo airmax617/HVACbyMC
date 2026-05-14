@@ -21,7 +21,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0" onClick={() => setOpen(false)}>
-            <img src="/logo-white.png" alt="MC Heating and Cooling" className="h-10 w-auto" />
+            <img src="/logo.svg" alt="MC Heating and Cooling" className="hidden lg:block h-10 w-auto" />
+            <img src="/logo-icon.svg" alt="MC Heating and Cooling" className="lg:hidden h-10 w-auto" />
           </Link>
 
           {/* Desktop nav */}

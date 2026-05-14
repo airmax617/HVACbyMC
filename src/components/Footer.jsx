@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <img src="/logo-white.png" alt="MC Heating and Cooling" className="h-12 w-auto mb-4" />
+            <img src="/logo.svg" alt="MC Heating and Cooling" className="h-12 w-auto mb-4" />
             <p className="text-sm text-gray-400 leading-relaxed">
               Reliable heating, cooling, electrical, and maintenance services for residential and light commercial customers.
             </p>
